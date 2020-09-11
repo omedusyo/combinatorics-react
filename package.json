@@ -12,6 +12,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "combinatorics": "git+https://github.com/omedusyo/combinatorics.git",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
