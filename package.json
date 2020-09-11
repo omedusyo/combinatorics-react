@@ -1,0 +1,17 @@
+{
+  "name": "combinatorics-react",
+  "version": "1.0.0",
+  "description": "Frontend react app for the combinatorics library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel public/index.html"
+  },
+  "author": "Yuriy Dupyn",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
