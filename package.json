@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "combinatorics": "git+https://github.com/omedusyo/combinatorics.git",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-katex": "^2.0.2"
   }
 }
