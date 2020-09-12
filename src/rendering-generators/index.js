@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import './combinatorics-style.scss';
+import './style.scss';
 import { combinations, tuples, multisets, permutations } from 'combinatorics';
 
 

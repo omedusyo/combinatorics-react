@@ -2,7 +2,7 @@
   "name": "combinatorics-react",
   "version": "1.0.0",
   "description": "Frontend react app for the combinatorics library",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "parcel public/index.html"
   },

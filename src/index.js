@@ -2,9 +2,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { CombinationsFormula, TuplesFormula, PermutationsFormula, MultisetsFormula, FullPermutationsFormula } from "./react-combinatorics-formulas";
-
-import { Combinations, Tuples, Permutations, Multisets } from "./react-combinatorics";
+import { CombinationsFormula, TuplesFormula, PermutationsFormula, MultisetsFormula, FullPermutationsFormula } from "./rendering-formulas/index";
+import { Combinations, Tuples, Permutations, Multisets } from "./rendering-generators/index";
 
 const appDOM = document.getElementById("combinatorics-app");
 
