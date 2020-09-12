@@ -9,13 +9,15 @@
   "author": "Yuriy Dupyn",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
   },
   "dependencies": {
     "combinatorics": "git+https://github.com/omedusyo/combinatorics.git",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1",
     "react-katex": "^2.0.2"
   }
 }

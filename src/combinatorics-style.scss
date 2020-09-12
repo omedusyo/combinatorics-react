@@ -1,0 +1,52 @@
+
+$combination-bg-color: #FCE8C4;
+$combination-text-color: #c97200;
+$plus-color: #416DEA;
+$dark:  #161616;
+
+.combination {
+  font-family: Monospace;
+  font-size: large;
+
+  margin: 2px;
+  display: inline-block;
+
+  background-color: $combination-bg-color;
+  color: $combination-text-color;
+
+  box-shadow: 1px 5px 10px rgba($dark, .1);
+  padding: 16px 12px;
+  &:hover {
+    transition: all 60ms ease;
+    opacity: 0.60;
+  }
+}
+
+.plus {
+  margin: 2px;
+  display: inline-block;
+  border: 1px solid grey;
+  background-color: $plus-color;
+  color: white;
+
+  box-shadow: 1px 5px 10px rgba($dark, .1);
+  padding: 16px 12px;
+
+  cursor: pointer;
+  opacity: 0.4;
+
+  &:hover {
+    transition: all 60ms ease;
+    opacity: 1.0;
+  }
+}
+
+.formula {
+  display: flex;
+  justify-content: center;
+  .formula-inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
