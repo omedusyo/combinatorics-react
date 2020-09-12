@@ -39,6 +39,10 @@ function Formula(props) {
   );
 }
 
+// TODO: maybe include a 
+//   <CombinationsFormula m=... n=... totalNum=... />
+// and so on, since we may be computing numOfCombinations(m, n) in some different place
+// and this would allows us to increase efficiency. But if there are only a few places, it won't matter. Premature Optimization is the root of all evil.
 export function CombinationsFormula({ m, n }) {
   return <Formula m={m} n={n} totalNum={ numOfCombinations(m, n) } formula={ combinationsFormula }  />
 }
