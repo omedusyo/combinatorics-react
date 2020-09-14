@@ -1,7 +1,4 @@
 
-// TODO: in Subset
-//   generalize subset.toString ... it should return a react component or something...
-
 import React from 'react';
 
 import './style.scss';
@@ -9,7 +6,8 @@ import { combinations, tuples, multisets, permutations } from 'combinatorics';
 
 
 const dots  = '&#8230;'; // stands for ...
-const empty = '&#8709;'; // stands for the the empty set
+// const empty = '&#8709;'; // stands for the the empty set
+const empty = '\u2205'; // stands for the the empty set
 
 // props
 //   subset
