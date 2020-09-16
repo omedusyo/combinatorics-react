@@ -19,10 +19,48 @@ import { CombinationsPage, TuplesPage, PermutationsPage, MultisetsPage } from ".
 
 const appDOM = document.getElementById("combinatorics-app");
 
-function App(props) {
+const C = "C"; // combinations
+const T = "T"; // tuples
+const P = "P"; // permutations
+const M = "M"; // multisets
+const pages = {
+  C: <CombinationsPage />,
+  T: <TuplesPage />,
+  P: <PermutationsPage />,
+  M: <MultisetsPage />,
+};
+
+function Choice({ }) {
+  const [choice, setChoice] = React.useState(M);
+  let page = pages[choice];
+
+  // potentially returns a class name
+  const focused = pageChoice => choice === pageChoice ? "focused" : "";
+  return (
+    <div>
+      <div className="menu">
+        <a href="#" className={focused(C)} onClick={ _ => setChoice(_ => C) }>
+          Kombinace
+        </a>
+        <a href="#" className={focused(T)} onClick={ _ => setChoice(_ => T) }>
+          Uspořádaná n-tice
+        </a>
+        <a href="#" className={focused(P)} onClick={ _ => setChoice(_ => P) }>
+          Variace
+        </a>
+        <a href="#" className={focused(M)} onClick={ _ => setChoice(_ => M) }>
+          Multimnožiny
+        </a>
+      </div>
+      { page }
+    </div>
+  );
+}
+
+function App({ }) {
   return (
     <div className="container">
-      <CombinationsPage />
+      <Choice />
     </div>
   );
 }

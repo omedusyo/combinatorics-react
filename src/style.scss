@@ -30,3 +30,20 @@ $dark-orange: #c97200;
   color: $dark-orange;
 }
 
+// =========== MENU =============
+.menu {
+  display: flex;
+  flex-direction: row;
+
+  div, a {
+    box-sizing: border-box;
+    padding: 20px 90px;
+    border: 1px solid black;
+    background-color: lightgrey;
+  }
+
+  .focused {
+    background-color: red;
+  }
+}
+
