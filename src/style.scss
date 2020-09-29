@@ -84,6 +84,10 @@ $menu-width: 15rem;
 
 // ========= small screens =========
 @media only screen and (max-width: 600px) {
+  #source-link1, #source-link2 {
+    display: none;
+  }
+
   .menu {
     flex-direction: row;
     width: 100%;
@@ -121,6 +125,7 @@ $menu-width: 15rem;
 
 // ========= large screens =========
 @media only screen and (min-width: 600px) {
+
   .menu {
     flex-direction: column;
     width: $menu-width;

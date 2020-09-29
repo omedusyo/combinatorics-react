@@ -41,7 +41,7 @@ function Choice({ }) {
     <div className="container">
       <div className="menu">
         <h2 className="header">Kombinatorika</h2>
-        <div className="arrow">>></div>
+        <div className="arrow">&gt;&gt;</div>
         <a href="#" className={focused(C)} onClick={ _ => setChoice(_ => C) }>
           Kombinace
         </a>
@@ -54,6 +54,8 @@ function Choice({ }) {
         <a href="#" className={focused(M)} onClick={ _ => setChoice(_ => M) }>
           Multimnožiny
         </a>
+        <a id="source-link1" href="https://github.com/omedusyo/combinatorics-react">#react source code</a>
+        <a id="source-link2" href="https://github.com/omedusyo/combinatorics">#library source code</a>
       </div>
       <div className="page">
         { page }
