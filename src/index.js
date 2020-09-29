@@ -31,14 +31,17 @@ const pages = {
 };
 
 function Choice({ }) {
-  const [choice, setChoice] = React.useState(M);
+  const defaultChoice = C;
+  const [choice, setChoice] = React.useState(defaultChoice);
   let page = pages[choice];
 
   // potentially returns a class name
   const focused = pageChoice => choice === pageChoice ? "focused" : "";
   return (
-    <div>
+    <div className="container">
       <div className="menu">
+        <h2 className="header">Kombinatorika</h2>
+        <div className="arrow">>></div>
         <a href="#" className={focused(C)} onClick={ _ => setChoice(_ => C) }>
           Kombinace
         </a>
@@ -52,16 +55,16 @@ function Choice({ }) {
           Multimnožiny
         </a>
       </div>
-      { page }
+      <div className="page">
+        { page }
+      </div>
     </div>
   );
 }
 
 function App({ }) {
   return (
-    <div className="container">
-      <Choice />
-    </div>
+    <Choice />
   );
 }
 

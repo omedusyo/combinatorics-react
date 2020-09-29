@@ -22,6 +22,8 @@ export function Slider({ max, handleInput, defaultValue, children }) {
         min="0" max={ max } defaultValue={ defaultValue }
         type="range"
       />
+      {/* TODO: you need to show both min and max nicely
+                0                                    max */} 
       <div className="range-maxValue">{ max }</div>
     </div>
   );
