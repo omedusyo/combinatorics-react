@@ -4,7 +4,8 @@
   "description": "Frontend react app for the combinatorics library",
   "main": "src/index.js",
   "scripts": {
-    "dev": "parcel public/index.html"
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html --public-url \"./\" --no-source-maps"
   },
   "author": "Yuriy Dupyn",
   "license": "ISC",
